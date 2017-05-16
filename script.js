@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $.getJSON('https://www.reddit.com/r/conspiracy/.json').done(function (fake) {
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 25; i++) {
       var $div = $('<div class="post"></div>');
       var $body = $('body');
       var $a = $('<a href=""></a>');
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
   $('body').on('click', 'a', function () {
     alert("don't click on fake news, dork.");
-    });
+  });
 
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
