@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    cursor: url(guard.png), auto;
 }
 
 h1 {
