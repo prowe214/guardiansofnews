@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 72px;
+}
+
+.post {
+    width: 30%;
+    font-family: sans-serif;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
