@@ -9,7 +9,7 @@ $(document).ready(function () {
       var $image = 'http://static.srcdn.com/wp-content/uploads/Guardians-of-the-Galaxy-End-Credits-Scene-Explained.jpg';
       var $summary = fake.data.children[i].data.selftext;
       var $title = fake.data.children[i].data.title;
-      var $url = 'https://www.reddit.com/' + fake.data.children[i].data.permalink;
+      var $url = '#';
       if (fake.data.children[i].data.preview) {
         $image = fake.data.children[i].data.preview.images[0].source.url;
       }
@@ -35,6 +35,10 @@ $(document).ready(function () {
       'position': 'absolute'
     });
   });
+
+  $('body').on('click', 'a', function () {
+    alert("don't click on fake news, dork.")
+  })
 
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
